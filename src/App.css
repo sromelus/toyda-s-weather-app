@@ -1,38 +1,55 @@
-.App {
+body {
+  margin: 0;
+  background: #8ab0b3;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid red;
+}
+
+.container-main h1 {
+  font-size: 48px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-main .search {
+  margin-left: 78%;
+  margin-bottom: 3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-main .search form input {
+  border-radius: 5px;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.cards-container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1%;
+  border: 1px solid red;
+  width: 30%;
+  height: 100px;
+  text-align: center;
+}
+
+.temp {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp li {
+  list-style: none;
+  margin: 0 5%;
 }
