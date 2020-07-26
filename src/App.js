@@ -29,14 +29,19 @@ export default class App extends Component {
     })
   }
 
-
-
-
   render(){
 
-   if(this.state.cities.length > 0){
-     console.log(this.state.cities[0].location.name);
-   }
+  const citiesData = this.state.cities.map((city) => {
+    return (
+      <a className="card" href="city.html">
+        <p>{citi.location.name}</p>
+        <div className="temp">
+          <li>79˚F</li>
+          <li>Sunny</li>
+        </div>
+      </a>
+    )
+  })
 
 
     return (
