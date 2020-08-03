@@ -36,6 +36,37 @@ body {
   flex-wrap: wrap;
 }
 
+.current-weather {
+  border: 1px solid red;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.current-weather h3 {
+  margin-left: 18.5%;
+}
+
+.current-weather-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.daily-temp-container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-temp {
+  margin: 1%;
+  border: 1px solid red;
+  width: 10%;
+  height: 100px;
+}
+
 .card {
   margin: 1%;
   border: 1px solid red;
