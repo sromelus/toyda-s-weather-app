@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import api_key from '../config';
 
@@ -11,12 +12,19 @@ export default class Dashboard extends Component {
   }
 
   componentDidMount(){
-    this.getTemp()
+    let searchTag = this.props.location.search;
+
+    if(searchTag){
+      searchTag = searchTag.replace("?search=", "")
+      this.props.history.push(`/${searchTag}`);
+    } else {
+      this.getTemp();
+    }
   }
 
 
   getTemp = async () => {
-    const cities = ['boston', 'chicago', 'houston', 'las vegas', 'los angeles', 'miami', 'new york', 'san diego', 'seattle'];
+    const cities = ['boston, ma', 'chicago, il', 'houston, tx', 'las vegas, nv', 'los angeles, ca', 'miami, fl', 'new york, ny', 'san diego, ca', 'seattle, wa'];
 
     let data = await Promise.all(
       cities.map(city => {
@@ -31,21 +39,24 @@ export default class Dashboard extends Component {
     })
   }
 
+
   render(){
 
+  console.log(this.state.cities);
+
   const citiesData = this.state.cities.map((city, index) => {
-   const { name } = city.location;
+   const { name, region } = city.location;
    const { text } = city.current.condition;
    const { temp_f } = city.current;
 
     return (
-      <a className="card" href={name} key={index}>
-        <p>{name}</p>
+      <Link to={name} className="card" key={index}>
+        <p>{name + ", " + region}</p>
         <div className="temp">
           <li>{text}</li>
           <li>{temp_f}˚F</li>
         </div>
-      </a>
+      </Link>
     )
   })
 
@@ -56,8 +67,8 @@ export default class Dashboard extends Component {
           <h1>Today's Weather</h1>
 
           <div className="search">
-            <form className="" action="index.html" method="post">
-              <input type="text" name="" placeholder="Search..."/>
+            <form className="" action="">
+              <input type="search" name="search" placeholder="Search..."/>
             </form>
           </div>
 

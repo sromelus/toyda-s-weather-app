@@ -51,7 +51,7 @@ export default class CityDetailTemp extends Component {
 
   render(){
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const { name } = this.state.location;
+    const { name, region, country } = this.state.location;
     const { temp_f } = this.state.current;
     const { icon, text } = this.state.condition;
 
@@ -76,7 +76,11 @@ export default class CityDetailTemp extends Component {
     return (
       <div className="container">
         <div className="container-main">
-          <h1>{name}</h1>
+        {country === "United States of America" ?
+          <h1>{name + ", " + region}</h1>
+         :
+          <h1>{name + ", " + country}</h1>
+        }
 
           <div className="current-weather">
             <h3>Current Weater</h3>
