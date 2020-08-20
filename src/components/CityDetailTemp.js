@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import api_key from '../config';
 
 export default class CityDetailTemp extends Component {
@@ -55,8 +56,6 @@ export default class CityDetailTemp extends Component {
     const { temp_f } = this.state.current;
     const { icon, text } = this.state.condition;
 
-    // console.log(this.state.forecast.day);
-
     const forecast = this.state.forecast.map((day, index) => {
       const { avgtemp_f } = day.day;
       const { icon, text } = day.day.condition;
@@ -75,6 +74,10 @@ export default class CityDetailTemp extends Component {
 
     return (
       <div className="container">
+      <Link to={'/'} className="card">
+      Back
+      </Link>
+
         <div className="container-main">
         {country === "United States of America" ?
           <h1>{name + ", " + region}</h1>

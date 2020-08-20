@@ -69,6 +69,7 @@ export default class Dashboard extends Component {
           <div className="search">
             <form className="" action="">
               <input type="search" name="search" placeholder="Search..."/>
+              <button>Search</button>
             </form>
           </div>
 
