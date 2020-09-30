@@ -67,8 +67,8 @@ export default class Dashboard extends Component {
           <h1>Today's Weather</h1>
 
           <div className="search">
-            <form className="" action="">
-              <input type="search" name="search" placeholder="Search..."/>
+            <form>
+              <input type="search" name="search" placeholder="city, state"/>
               <button>Search</button>
             </form>
           </div>

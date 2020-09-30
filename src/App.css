@@ -48,6 +48,7 @@ body {
 .current-weather {
   border: 1px solid red;
   width: 50%;
+  height: 127px;
   margin: 0 auto;
   margin-top: 6%;
   margin-bottom: 7%;
@@ -88,7 +89,7 @@ body {
 .card-temp {
   margin: 1%;
   border: 1px solid red;
-  width: 10%;
+  width: 25%;
   height: 100px;
   background: #f3f3f3;
   color: #343226;
@@ -114,6 +115,22 @@ body {
   transition: background .6s ease;
   background: #c4c4c4;
   color: #ffffff;
+}
+
+.error {
+  display: block;
+  margin: 0 auto;
+}
+
+.forcast-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.forcast-cards div {
+  position: relative;
+  bottom: -18px;
+  margin-left: 16px;
 }
 
 .temp {
