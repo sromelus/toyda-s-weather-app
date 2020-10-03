@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Search from './Search';
 import '../App.css';
 import api_key from '../config';
 
 export default class Dashboard extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       cities: []
     }
   }
 
   componentDidMount(){
-    let searchTag = this.props.location.search;
-
-    if(searchTag){
-      searchTag = searchTag.replace("?search=", "")
-      this.props.history.push(`/${searchTag}`);
-    } else {
-      this.getTemp();
-    }
+    this.getTemp();
   }
 
 
@@ -66,12 +60,7 @@ export default class Dashboard extends Component {
         <div className="container-main">
           <h1>Today's Weather</h1>
 
-          <div className="search">
-            <form>
-              <input type="search" name="search" placeholder="city, state"/>
-              <button>Search</button>
-            </form>
-          </div>
+          <Search history ={this.props.history} />
 
           <div className="cards-container">
             {citiesData}
