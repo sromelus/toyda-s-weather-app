@@ -10,7 +10,12 @@ export default class CityDetailTemp extends Component {
       current: {},
       condition: {},
       forecast: [],
-      location: {},
+      location: {
+        name: '',
+        country: '',
+        region: ''
+      },
+      comma: '',
       error: false
     }
   }
@@ -47,7 +52,8 @@ export default class CityDetailTemp extends Component {
           current: data.current,
           condition: data.current.condition,
           forecast: data.forecast.forecastday,
-          location: data.location
+          location: data.location,
+          comma: ', '
         })
       })
       .catch(error => console.error(`Error in fetch: ${error.message}`))
@@ -59,6 +65,8 @@ export default class CityDetailTemp extends Component {
     const { name, region, country } = this.state.location;
     const { temp_f } = this.state.current;
     const { icon, text } = this.state.condition;
+    const { comma } = this.state;
+
 
     const forecast = this.state.forecast.map((day, index) => {
       const { avgtemp_f } = day.day;
@@ -98,9 +106,9 @@ export default class CityDetailTemp extends Component {
             :
             <>
               {country === "United States of America" ?
-                <h1>{name + ", " + region}</h1>
+                <h1>{name + comma + region}</h1>
                 :
-                <h1>{name + ", " + country}</h1>
+                <h1>{name + comma + country}</h1>
               }
 
               <div className="current-weather">
