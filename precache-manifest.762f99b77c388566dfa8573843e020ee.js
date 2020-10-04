@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94bcf24b2362c6b55229f9dcc328e18c",
+    "revision": "1be290bcd9ef1fc3e47b2761564d8e24",
     "url": "/the-weather-today/index.html"
   },
   {
-    "revision": "b4477d37d769320c2d48",
+    "revision": "9cd3a38c2ce3e8964eb6",
     "url": "/the-weather-today/static/css/main.43ea1669.chunk.css"
   },
   {
-    "revision": "ba21337b68f454f9994a",
-    "url": "/the-weather-today/static/js/2.244a1d8b.chunk.js"
+    "revision": "c8c818fe7dff68b427fa",
+    "url": "/the-weather-today/static/js/2.7e1b0715.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/the-weather-today/static/js/2.244a1d8b.chunk.js.LICENSE.txt"
+    "url": "/the-weather-today/static/js/2.7e1b0715.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b4477d37d769320c2d48",
-    "url": "/the-weather-today/static/js/main.1625d0fb.chunk.js"
+    "revision": "9cd3a38c2ce3e8964eb6",
+    "url": "/the-weather-today/static/js/main.cf82a2aa.chunk.js"
   },
   {
     "revision": "6df38ee25888b9572b29",
