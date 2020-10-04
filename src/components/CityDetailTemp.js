@@ -30,7 +30,7 @@ export default class CityDetailTemp extends Component {
 
   componentDidMount(){
     let city = this.props.match.params.id;
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=7`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=7`)
       .then(response => {
         if(response.status >= 400 && response.status <= 500) {
           this.setState({

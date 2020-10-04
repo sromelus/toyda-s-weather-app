@@ -22,7 +22,7 @@ export default class Dashboard extends Component {
 
     let data = await Promise.all(
       cities.map(city => {
-        return fetch(`http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`).then(res => res.json())
+        return fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`).then(res => res.json())
       })
     );
 
