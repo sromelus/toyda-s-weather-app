@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  HashRouter as Router, 
+  Switch,
+  Route
+} from 'react-router-dom';
 import Dashboard from './components/Dashboard'
 import CityDetailTemp from './components/CityDetailTemp'
 // import NotFound from './components/NotFound';
