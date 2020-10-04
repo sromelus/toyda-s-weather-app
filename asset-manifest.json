@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/the-weather-today/static/css/main.43ea1669.chunk.css",
+    "main.js": "/the-weather-today/static/js/main.002b2b3e.chunk.js",
+    "main.js.map": "/the-weather-today/static/js/main.002b2b3e.chunk.js.map",
+    "runtime-main.js": "/the-weather-today/static/js/runtime-main.9c87e8f4.js",
+    "runtime-main.js.map": "/the-weather-today/static/js/runtime-main.9c87e8f4.js.map",
+    "static/js/2.244a1d8b.chunk.js": "/the-weather-today/static/js/2.244a1d8b.chunk.js",
+    "static/js/2.244a1d8b.chunk.js.map": "/the-weather-today/static/js/2.244a1d8b.chunk.js.map",
+    "index.html": "/the-weather-today/index.html",
+    "precache-manifest.adf81b26b2059c7e156385e78540b367.js": "/the-weather-today/precache-manifest.adf81b26b2059c7e156385e78540b367.js",
+    "service-worker.js": "/the-weather-today/service-worker.js",
+    "static/css/main.43ea1669.chunk.css.map": "/the-weather-today/static/css/main.43ea1669.chunk.css.map",
+    "static/js/2.244a1d8b.chunk.js.LICENSE.txt": "/the-weather-today/static/js/2.244a1d8b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c87e8f4.js",
+    "static/js/2.244a1d8b.chunk.js",
+    "static/css/main.43ea1669.chunk.css",
+    "static/js/main.002b2b3e.chunk.js"
+  ]
+}
