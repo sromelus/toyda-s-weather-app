@@ -21,13 +21,6 @@ export default class CityDetailTemp extends Component {
   }
 
 
-  // componentDidUnmount() {
-  //   this.setState({
-  //     ...this.state,
-  //     error: false
-  //   })
-  // }
-
   componentDidMount(){
     let city = this.props.match.params.id;
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=7`)
@@ -79,7 +72,7 @@ export default class CityDetailTemp extends Component {
         <div className="card-temp" key={index} >
           {days[tday]} {date} <br/><br/>
           Temp: {avgtemp_f}˚F <br/>
-          <div className="forcast-cards">
+          <div className="forecast-cards">
             <img src={icon} alt=""/>
             <div>
               <span>{text}</span>

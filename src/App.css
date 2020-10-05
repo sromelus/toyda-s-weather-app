@@ -127,7 +127,7 @@ body {
   justify-content: center;
 }
 
-.forcast-cards div {
+.forecast-cards div {
   position: relative;
   bottom: -18px;
   margin-left: 16px;
@@ -141,4 +141,38 @@ body {
 .temp li {
   list-style: none;
   margin: 0 5%;
+}
+
+
+@media screen and (max-width: 576px) {
+  .container-main .search {
+    margin-left: 20%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+
+  .cards-container {
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card-temp {
+    height: 100%;
+  }
+
+  .current-weather-main {
+    margin-top: -16px;
+  }
+
+  .current-weather {
+    height: 127px;
+  }
+
+  .api-ref {
+    margin-left: -12%;
+  }
+
 }
