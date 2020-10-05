@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1be290bcd9ef1fc3e47b2761564d8e24",
+    "revision": "06d9061f7faadbaff9fb0e3bd2a468aa",
     "url": "/the-weather-today/index.html"
   },
   {
-    "revision": "9cd3a38c2ce3e8964eb6",
-    "url": "/the-weather-today/static/css/main.43ea1669.chunk.css"
+    "revision": "ac91f3296248264ac358",
+    "url": "/the-weather-today/static/css/main.f2da8a10.chunk.css"
   },
   {
     "revision": "c8c818fe7dff68b427fa",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-weather-today/static/js/2.7e1b0715.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9cd3a38c2ce3e8964eb6",
-    "url": "/the-weather-today/static/js/main.cf82a2aa.chunk.js"
+    "revision": "ac91f3296248264ac358",
+    "url": "/the-weather-today/static/js/main.6d11338e.chunk.js"
   },
   {
     "revision": "6df38ee25888b9572b29",
