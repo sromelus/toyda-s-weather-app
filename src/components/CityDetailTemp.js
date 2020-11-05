@@ -108,7 +108,7 @@ export default class CityDetailTemp extends Component {
                 <h3>Current Weater</h3>
                 <div className="current-weather-main">
                   <div className="current-weather-image">
-                    <img src={icon} alt=""/> <span>{text}</span>
+                    <img src={icon} alt=""/> <span>{ text }</span>
                   </div>
                   <div className="current-weather-info">
                   Temperature: {temp_f}˚F
