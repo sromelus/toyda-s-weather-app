@@ -1,3 +1,10 @@
+If you would like to clone this repo you need to:
+  1. Request an api key here - https://www.weatherapi.com/
+  2. Add config.js file with the following:
+      const API_KEY = 'YOUR API_KEY';
+      export default API_KEY;
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
