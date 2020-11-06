@@ -62,7 +62,7 @@ export default class Dashboard extends Component {
           <Search history ={this.props.history} />
 
           <div className="cards-container">
-            {citiesData}
+            {citiesData.length > 0 ? citiesData : <div className="loader" style={{marginTop: "20%"}}></div>}
           </div>
         </div>
       </div>
