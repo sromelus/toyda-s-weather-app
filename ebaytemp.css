@@ -1,0 +1,14 @@
+h2 {
+    line-height: 45px; 
+    background: rgba(26, 214, 8, 0.678);
+  }
+
+  .section {
+    border-top: 1px solid #CBD4C2; 
+    padding: 40px 0 0 0;
+  }
+
+ 
+  .style1 {
+    margin-left: 5px;
+  }
